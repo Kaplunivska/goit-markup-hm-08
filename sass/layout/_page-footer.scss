@@ -1,0 +1,204 @@
+.page-footer__container {
+    display: block;
+    align-items: baseline;
+    flex-basis: calc((50% - 45px) / 2);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: baseline;
+        
+      }
+      @media screen and (min-width:1200px) {
+        display: flex;
+        align-items: baseline;
+        padding-top: 65px;
+        padding-bottom: 65px;
+        
+      }
+
+}
+
+.footer-list {
+    background-color: #2F303A;
+    @media screen and (max-width:1199px) {
+        text-align: center;
+      
+    }
+}
+  
+.footer-row {
+    @media screen and (max-width:1199px) {  
+    display: flex;
+
+    align-items: center;
+    flex-basis: calc((50% - 45px) / 2);
+    }
+   
+}
+  
+.address-nav {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 20px;
+    @extend %list;
+    // @media screen and (max-width:1199px) {
+    //   text-align: center;
+    //   margin-bottom: 60px;
+    //   }
+}
+  
+.address-link {
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ transition-property: color;
+ transition-duration: 250ms;
+ transition-timing-function: var(--timing-function);
+}
+  
+.address-link {
+@extend %link;
+ color: var(--secondary-text-color);
+ font-style: normal;
+ text-decoration: none;
+ transition: color 250ms var(--timing-function);
+
+ &:focus,
+ &:hover
+    {
+    color: var(--accent-color);
+   }
+}
+  
+.address-link-white {
+    color: var(--primary-bg-color);
+    transition: color 250ms var(--timing-function);
+}
+      
+// .contacts:not(:last-child) {
+// margin-bottom: 9px;
+// }
+
+  
+.footer-caption {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+        text-align: start;
+        }
+}
+
+.page-footer__box-first {
+display: flex;
+flex-direction: column;
+margin-bottom: 60px;
+}
+
+.page-footer__box-second {
+@media screen and (min-width:1200px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 70px;
+    }
+}
+  
+.aside-list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    @media screen and (min-width:1200px) {
+      margin-bottom: 0;
+    }
+}
+  
+.aside-items:not(:first-child) {
+    margin-left: 10px; 
+}
+      
+.aside-links {
+ width: 44px;
+ height: 44px;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: var(--primary-bg-color);
+ background: rgba(255, 255, 255, 0.1);
+ transition-property: background-color;
+ transition-duration: 250ms;
+ transition-timing-function: var(--timing-function);
+}
+  
+.aside-icon {
+  fill: currentColor;
+}
+  
+.aside-links:hover,
+.aside-links:focus {
+   color: var(--primary-bg-color);
+   background-color: var(--accent-color);
+}
+
+/* Підпишіться на розсилку */
+
+.page-footer__box-third {
+    @media screen and (min-width:1200px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: 93px;
+    }
+    
+}
+
+.social-text {
+    color: var(--primary-bg-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    width: 100%;
+    max-height: 50px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    padding: 15px 16px 15px;
+    background-color: transparent;
+    font: inherit;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 20px;
+
+    @media screen and (min-width:1200px) {
+      min-width: 358px;
+      max-height: 50px;
+      margin-bottom: 0;
+      }
+}
+
+.send-icon {
+    fill: currentColor;
+    @media screen and (min-width:1200px) {
+        margin-left: 10px;
+    }
+     
+}

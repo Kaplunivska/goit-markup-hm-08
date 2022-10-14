@@ -1,0 +1,32 @@
+.logo {
+    @extend %link;
+
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.19; 
+    color: var(--accent-color);
+    // margin-right: 93px;
+    &:hover,
+    &:focus {
+      text-decoration: underline var(--accent-color);
+      transition-duration: 250ms;
+      transition-timing-function: var(--timing-function);
+    }
+
+    @media screen and (min-width:1200px){
+        font-size: 26px;
+        line-height: 1.19;
+    }
+
+}
+
+.logo--header span {
+    color: #000000;
+}
+
+.logo--footer span {
+    color: #ffffff;
+}
+

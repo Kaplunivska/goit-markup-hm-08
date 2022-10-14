@@ -1,0 +1,130 @@
+.footer-list {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+.footer-row {
+    display: flex;
+    align-items: center;
+    flex-basis: calc((50% - 45px) / 2);
+}
+  
+.footer-nav {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 20px;
+  
+}
+  
+.contacts {
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ transition-property: color;
+ transition-duration: 250ms;
+ transition-timing-function: var(--timing-function);
+}
+  
+.contacts {
+ color: var(--secondary-text-color);
+ font-style: normal;
+}
+  
+ .city {
+    color: var(--primary-bg-color);
+}
+      
+.contacts:not(:last-child) {
+margin-bottom: 9px;
+}
+  
+.contacts:hover,
+.contacts:focus {
+  color: #ffffff;
+}
+  
+.footer-caption {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+  
+.footer-title {  
+    margin-left: 70px;
+}
+  
+.aside-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.aside-items:not(:first-child) {
+    margin-left: 10px; 
+}
+      
+.aside-links {
+ width: 44px;
+ height: 44px;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: var(--primary-bg-color);
+ background: rgba(255, 255, 255, 0.1);
+ transition-property: background-color;
+ transition-duration: 250ms;
+ transition-timing-function: var(--timing-function);
+}
+  
+.aside-icon {
+  fill: currentColor;
+}
+  
+.aside-links:hover,
+.aside-links:focus {
+   color: var(--primary-bg-color);
+   background-color: var(--accent-color);
+}
+
+/* Підпишіться на розсилку */
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.social-text {
+    color: var(--primary-bg-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    min-width: 358px;
+    max-height: 50px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    padding: 15px 16px 15px;
+    background-color: transparent;
+    font: inherit;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.send-icon {
+    fill: currentColor;
+}

@@ -1,0 +1,102 @@
+// Замовити послугу
+.service {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8; 
+    font-family: inherit;
+    padding: 10px 32px;
+    width: 216px;
+    height: 50px;
+    border: transparent;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+}
+
+.service:hover, 
+.service:focus {
+  background-color: #188CE8;
+}
+
+// Підписатися на розсилку
+
+.button-send {
+    display: inline-flex;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    padding: 10px 28px;
+    min-width: 200px;
+    background: #2196F3;
+    color: var(--primary-bg-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.button-send .send-icon {
+    margin-left: 10px;
+}
+
+.button-send:active {
+    background-color: #f5f4fa;
+    color: var(--accent-color);
+}
+
+// Закрити модальне вікно
+ 
+.btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
+}
+
+.btn-close:hover,
+.btn-close:focus {
+fill: var(--accent-color);
+}
+
+// Відправити
+
+.modal-form-button {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+    text-decoration: none;
+    transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+} 
+
+.modal-form-button:hover,
+.modal-form-button:focus {
+  background-color: #188CE8;
+}

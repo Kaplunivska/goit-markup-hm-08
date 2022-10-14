@@ -1,0 +1,143 @@
+.page-header__container {
+    // display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.page-header {
+    border: 1px solid var(--border-white-color);
+    background-color:var(--primary-bg-color);
+    @media screen and (min-width:768px){
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.header-link {
+    --header-padding: 24px;
+    padding: var(--header-padding) 0;
+}
+
+/* Навігація */
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation__item:not(:last-child) {
+ margin-right: 50px;
+}
+
+.navigation__link {
+ @extend %link;
+ position: relative;
+ display: block;
+
+}
+   
+.navnavigation__list .navigation__link .contacts__list {
+ transition: color 250ms var(--timing-function); 
+}
+   
+
+.navigation__list .navigation__link.current {
+color: var(--accent-color);
+}
+   
+.navigation__link--current::after {
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: calc(0px - var(--header-padding) - 9px) ;
+   display: block;
+
+   width: 100%;
+   height: 4px;
+   background-color: var(--accent-color);
+   border-radius: 2px;
+}
+
+.navigation__list {
+    @extend %list;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+    @media screen and (min-width:768px){
+        display: flex;
+        margin-left: 87px;
+    }
+      @media screen and (min-width:1200px){
+        margin-left: 92px;
+    }
+}
+
+.contacts__list {
+    @extend %list;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    margin-left: auto;
+
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px){
+        display: flex;
+        flex-direction: column;
+      
+      }
+      @media screen and (min-width:1200px){
+        display: flex;
+    }
+   
+}
+
+.navigation__link {
+color: var(--primary-text-color);
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: var(--timing-function);
+
+&:hover,
+&:focus{
+color: var(--accent-color);
+}
+}
+   
+.navigation__link:not(:last-child) {
+margin-right: 50px;
+}
+
+.contacts__link {
+    @extend %link;
+    color: var(--secondary-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus{
+    color: var(--accent-color);  
+    }
+}
+   
+.contacts__icon {
+   fill: currentColor ;
+   margin-right: 10px;
+}
+
+.header-mail {
+ margin-right: 30px;
+}
