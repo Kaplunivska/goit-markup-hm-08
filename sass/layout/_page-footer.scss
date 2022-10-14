@@ -172,7 +172,14 @@ margin-bottom: 60px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
+
+    // @media screen and (min-width:1200px) {
+    //     text-align: start;
+    // }
 }
+
+
+
 
 .form-input {
     width: 100%;
@@ -189,7 +196,7 @@ margin-bottom: 60px;
     margin-bottom: 20px;
 
     @media screen and (min-width:1200px) {
-      min-width: 358px;
+      max-width: 358px;
       max-height: 50px;
       margin-bottom: 0;
       }

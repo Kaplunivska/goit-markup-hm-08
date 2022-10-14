@@ -1,8 +1,6 @@
 .page-header__container {
-    // display: flex;
-    align-items: center;
-    justify-content: center;
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .page-header {
@@ -15,8 +13,12 @@
 }
 
 .header-link {
-    --header-padding: 24px;
+    --header-padding: 16px;
     padding: var(--header-padding) 0;
+    @media screen and (min-width:768px){
+        --header-padding: 24px;
+        padding: var(--header-padding) 0;
+    }
 }
 
 /* Навігація */
@@ -34,15 +36,14 @@
  @extend %link;
  position: relative;
  display: block;
-
 }
    
 .navnavigation__list .navigation__link .contacts__list {
  transition: color 250ms var(--timing-function); 
 }
    
-
-.navigation__list .navigation__link.current {
+// .navigation__list
+ .navigation__link.current {
 color: var(--accent-color);
 }
    
@@ -50,7 +51,7 @@ color: var(--accent-color);
    content: '';
    position: absolute;
    left: 0;
-   bottom: calc(0px - var(--header-padding) - 9px) ;
+   bottom: calc(0px - var(--header-padding) - 16px) ;
    display: block;
 
    width: 100%;
@@ -93,10 +94,12 @@ color: var(--accent-color);
     @media screen and (min-width:768px) and (max-width:1199px){
         display: flex;
         flex-direction: column;
-      
+        margin-left: auto;
       }
       @media screen and (min-width:1200px){
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
    
 }
@@ -115,6 +118,14 @@ color: var(--accent-color);
    
 .navigation__link:not(:last-child) {
 margin-right: 50px;
+}
+
+.contacts__item{
+    @media screen and (min-width:768px)and (max-width:1199px){
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
 }
 
 .contacts__link {

@@ -37,7 +37,7 @@
           </ul>
         </nav>
         <ul class="contacts__list list">
-          <li >
+          <li class="contacts__item">
             <a class="contacts__link header-mail" href="mailto:info@devstudio.com"
               ><svg class="contacts__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope-1"></use>
@@ -45,7 +45,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="contacts__item">
             <a class="contacts__link header-tel" href="tel:+380961111111"
               ><svg class="contacts__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-tell"></use>
@@ -54,6 +54,8 @@
             >
           </li>
         </ul>
+
+
         <button class="toggle js-open-menu"
         aria-expanded="false"
         aria-controls="mobile-menu">
@@ -67,12 +69,12 @@
         </button>
       </div>
 
-      <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="menu-container js-menu-container" id="mobile-menu" data-menu>
         <button class="menu-toggle js-close-menu">
           <svg 
           width="40" 
           height="40" 
-          aria-label="Перемикач мобільного меню" >
+          aria-label="Перемикач мобільного меню">
             <use href="./images/icons.svg#icon-menuclose"></use>
           </svg>
         </button>
@@ -94,13 +96,13 @@
             +38 096 111 11 11</a>
           <a class="menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
           <ul class="social-menu">
-            <li class=" social-menu__item">Instagram</li>
-            <li class=" social-menu__item">Twitter</li>
-            <li class=" social-menu__item">Facebook</li>
-            <li class=" social-menu__item">LinkedIn</li>
+            <li class="social-menu__item">Instagram</li>
+            <li class="social-menu__item">Twitter</li>
+            <li class="social-menu__item">Facebook</li>
+            <li class="social-menu__item">LinkedIn</li>
           </ul>
         </div>
-      </div> -->
+      </div>
     </header>
 
     <main>
@@ -750,5 +752,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
