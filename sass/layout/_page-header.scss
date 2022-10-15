@@ -42,8 +42,8 @@
  transition: color 250ms var(--timing-function); 
 }
    
-// .navigation__list
- .navigation__link.current {
+
+.navigation__list .navigation__link--current {
 color: var(--accent-color);
 }
    
@@ -51,14 +51,21 @@ color: var(--accent-color);
    content: '';
    position: absolute;
    left: 0;
-   bottom: calc(0px - var(--header-padding) - 16px) ;
+   bottom: calc(0px - var(--header-padding) - 15px);
    display: block;
 
    width: 100%;
    height: 4px;
    background-color: var(--accent-color);
    border-radius: 2px;
+
+  @media screen and (min-width:1200px){
+    bottom: calc(0px - var(--header-padding) - 10px);
+   }
 }
+
+
+
 
 .navigation__list {
     @extend %list;
@@ -133,7 +140,6 @@ margin-right: 50px;
     color: var(--secondary-text-color);
     display: flex;
     align-items: center;
-    justify-content: center;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);

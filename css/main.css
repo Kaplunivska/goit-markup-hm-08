@@ -202,7 +202,7 @@ button {
   transition: color 250ms var(--timing-function);
 }
 
-.navigation__link.current {
+.navigation__list .navigation__link--current {
   color: var(--accent-color);
 }
 
@@ -210,12 +210,17 @@ button {
   content: "";
   position: absolute;
   left: 0;
-  bottom: calc(0px - var(--header-padding) - 16px);
+  bottom: calc(0px - var(--header-padding) - 15px);
   display: block;
   width: 100%;
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
+}
+@media screen and (min-width: 1200px) {
+  .navigation__link--current::after {
+    bottom: calc(0px - var(--header-padding) - 10px);
+  }
 }
 
 .navigation__list {
@@ -292,7 +297,6 @@ button {
   color: var(--secondary-text-color);
   display: flex;
   align-items: center;
-  justify-content: center;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
@@ -1261,7 +1265,7 @@ button {
 }
 
 .checkbox-link {
-  margin-left: 5px;
+  margin-left: 4px;
   font-weight: 400;
   color: var(--accent-color);
   text-decoration-line: underline;
@@ -1311,6 +1315,11 @@ button {
   background-color: #ffffff;
 }
 
+@media (min-width: 768px) {
+  .toggle {
+    display: none;
+  }
+}
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -1331,6 +1340,11 @@ button {
     display: none;
   }
 }
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: var(--accent-color);
+}
+
 .menu-container.is-open {
   transform: translateX(0);
 }
