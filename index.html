@@ -177,10 +177,11 @@
           <ul class="trade__list list">
             <li class="trade__item">
               <img
-                src="images/img.jpg"
-                alt="Програміст працює на ноутбуці"
+                class="trade__img"
+                srcset="./images/index/box1.jpg 1x, ./images/index/box1x2.jpg 2x" 
+                src="./images/index/box1.jpg"
+                alt="Розробка додатків"
                 width="370"
-                height="294"
               />
                <div class="trade__overlay">
                 <h3 class="trade__title">Десктопні додатки</h3>
@@ -189,12 +190,12 @@
                 </li>
             </li>
             <li class="trade__item">
-              
               <img
-                src="images/img2.jpg"
+                class="trade__img"
+                srcset="./images/index/box2.jpg 1x, ./images/index/box2x2.jpg 2x" 
+                src="./images/index/box2.jpg"
                 alt="Дизайнери розробляють додатки для смартфонів"
                 width="370"
-                height="294"
               />
               <div class="trade__overlay">
                 <h3 class="trade__title">Мобільні додатки</h3>
@@ -202,13 +203,13 @@
               
             </li>
             <li class="trade__item">
-             
               <img
-                src="images/img3.jpg"
-                alt="Дизайнер працює над кольором"
-                width="370"
-                height="294"
-              />
+              class="trade__img"
+              srcset="./images/index/box3.jpg 1x, ./images/index/box3x2.jpg 2x" 
+              src="./images/index/box3.jpg"
+              alt="Дизайнер працює над кольором"
+              width="370"
+            />
               <div class="trade__overlay">
                 <h3 class="trade__title">Дизайнерські рішення</h3>
               </div>
@@ -225,13 +226,17 @@
 
           <ul class="list staff staff-box">
             <li class="staff-img">
-              
+              <picture>
+                <source srcset="./images/index/teamcard1mob.jpg 1x, ./images/index/teamcard1mobx2.jpg 2x" media="(max-width: 767px )" />
+                <source srcset="./images/index/teamcard1.jpg 1x, ./images/index/teamcard1x2.jpg 2x" media="(min-width: 1199px )" />
+                <source srcset="./images/index/teamcard1tab.jpg 1x, ./images/index/teamcard1tabx2.jpg 2x" media="(min-width: 768px )" />
               <img
-                src="./images/img_igor.jpg"
-                alt="Студія"
-                width="270"
-                height="260"
+                src="./images/index/teamcard1tab.jpg"
+                alt="фото"
+                width="450"
               />
+              </picture>
+
               <div class="staff-text">
                 <h3 class="subtitle">Ігор Дем'яненко</h3>
                 <p class="profession" lang="en">Product Designer</p>
@@ -299,12 +304,15 @@
             </li>
           
             <li class="staff-img">
+              <picture>
+                <source srcset="./images/index/teamcard2mob.jpg 1x, ./images/index/teamcard2mobx2.jpg 2x" media="(max-width: 767px )" />
+                <source srcset="./images/index/teamcard2.jpg 1x, ./images/index/teamcard2x2.jpg 2x" media="(min-width: 1199px )" />
+                <source srcset="./images/index/teamcard2tab.jpg 1x, ./images/index/teamcard2tabx2.jpg 2x" media="(min-width: 768px )" />
               <img
-                src="./images/img_olga.jpg"
-                alt="Студія"
-                width="270"
-                height="260"
-              />
+                src="./images/index/teamcard2tab.jpg"
+                alt="фото"
+                width="450"
+              /></picture>
               <div class="staff-text">
                 <h3 class="subtitle">Ольга Рєпіна</h3>
                 <p class="profession" lang="en">Frontend Developer</p>
@@ -372,12 +380,16 @@
             </li>
             <li class="staff-img">
               
+              <picture>
+                <source srcset="./images/index/teamcard3mob.jpg 1x, ./images/index/teamcard3mobx2.jpg 2x" media="(max-width: 767px )" />
+                <source srcset="./images/index/teamcard3.jpg 1x, ./images/index/teamcard3x2.jpg 2x" media="(min-width: 1199px )" />
+                <source srcset="./images/index/teamcard3tab.jpg 1x, ./images/index/teamcard3tabx2.jpg 2x" media="(min-width: 768px )" />
               <img
-                src="./images/img_mykola.jpg"
-                alt="Студія"
-                width="270"
-                height="260"
+                src="./images/index/teamcard3tab.jpg"
+                alt="фото"
+                width="450"
               />
+              </picture>
               <div class="staff-text">
                 <h3 class="subtitle">Микола Тарасов</h3>
                 <p class="profession" lang="en">Marketing</p>
@@ -445,12 +457,16 @@
             </li>
             <li class="staff-img">
               
+              <picture>
+                <source srcset="./images/index/teamcard4mob.jpg 1x, ./images/index/teamcard4mobx2.jpg 2x" media="(max-width: 767px )" />
+                <source srcset="./images/index/teamcard4.jpg 1x, ./images/index/teamcard4x2.jpg 2x" media="(min-width: 1199px )" />
+                <source srcset="./images/index/teamcard4tab.jpg 1x, ./images/index/teamcard4tabx2.jpg 2x" media="(min-width: 768px )" />
               <img
-                src="./images/img_myhailo.jpg"
-                alt="Студія"
-                width="270"
-                height="260"
+                src="./images/index/teamcard4tab.jpg"
+                alt="фото"
+                width="450"
               />
+              </picture>
               <div class="staff-text">
                 <h3 class="subtitle">Михайло Єрмаков</h3>
                 <p class="profession" lang="en">UI Designer</p>
