@@ -544,7 +544,7 @@ button {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/index/herobcgx2.jpg");
+    background-image: url("../images/ index/herobcgx2.jpg");
   }
 }
 .hero__wrap {
