@@ -174,9 +174,6 @@ margin-bottom: 60px;
     margin-bottom: 20px;
 }
 
-
-
-
 .form-input {
     width: 100%;
     max-height: 50px;
@@ -190,12 +187,14 @@ margin-bottom: 60px;
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 20px;
+}
 
-    @media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
+    .form-input {
       max-width: 358px;
       max-height: 50px;
     }
-}
+  }
 
 .send-icon {
     fill: currentColor;
