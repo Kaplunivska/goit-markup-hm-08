@@ -493,7 +493,6 @@ button {
   .form-input {
     max-width: 358px;
     max-height: 50px;
-    margin-bottom: 0;
   }
 }
 
@@ -1044,15 +1043,16 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+
 @media screen and (min-width: 1200px) {
   .button-send {
     max-width: 200px;
-    margin-left: 10px;
+    margin: 10px 0px 0px 80px;
     padding: 10px 28px;
   }
 }
 
-.button-send .send-icon {
+.send-icon {
   margin-left: 10px;
 }
 
